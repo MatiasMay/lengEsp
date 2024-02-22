@@ -1,0 +1,16 @@
+inicio;
+	imprimir("Programa que encuentra el rango de conjunto de 10 numeros");
+	ent i;
+	ent numeros[10] = { 4,10,103,23,54,24,2,12,340,204};
+	ent num1 = numeros[0];
+	ent num2 = numeros[0];
+	por(i = 0; i <10;i = i+1){
+		si (i > num2){
+			num2 = i;
+}
+si (i < num1){
+	num1 = i;
+}
+}
+Imprimir("El rango es de " + aCadena(num1) + " a "+aCadena(num2));
+fin;
